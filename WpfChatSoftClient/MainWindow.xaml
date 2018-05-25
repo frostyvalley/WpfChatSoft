@@ -5,8 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfChatSoftClient"
         mc:Ignorable="d"
-        Title="MainWindow" Height="514" Width="602">
+        Title="客户端" Height="514" Width="602">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="txtShow" Grid.Row="1" 
+                 HorizontalAlignment="Stretch" 
+                 VerticalAlignment="Stretch"
+                 Margin="10,10,10,10" 
+                 TextWrapping="Wrap" 
+                 IsReadOnly="True" 
+                 />
+        <TextBox x:Name="txtInput" Grid.Row="2" 
+                 HorizontalAlignment="Stretch" 
+                 VerticalAlignment="Stretch"
+                 Margin="10,10,10,10" 
+                 TextWrapping="Wrap" 
+                 />
+        <Button x:Name="btnSendMsg" Grid.Row="3" 
+                Content="发送" 
+                HorizontalAlignment="Right" 
+                VerticalAlignment="Bottom"
+                Margin="0,0,10,10" 
+                Width="75"
+                />
     </Grid>
 </Window>

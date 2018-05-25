@@ -84,5 +84,11 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WpfChatSoftClient\WpfChatSoftClient.csproj">
+      <Project>{9b91cc2c-0503-4526-a484-bdebd51d0095}</Project>
+      <Name>WpfChatSoftClient</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
